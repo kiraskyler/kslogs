@@ -1,5 +1,5 @@
 astyle "*.c,*.cpp,*.h"\
-	--recursive
+	--recursive\
 	--style=bsd\
 	--convert-tabs\
 	--indent=spaces=4\

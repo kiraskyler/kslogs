@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "kslogs_file.h": "c",
+        "kslogs_config.h": "c",
+        "kslogs_basic.h": "c",
+        "sched.h": "c",
+        "*.tcc": "c",
+        "chrono": "c",
+        "cstdlib": "c",
+        "system_error": "c",
+        "typeinfo": "c"
+    }
+}
