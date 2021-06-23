@@ -2,7 +2,7 @@
 
 #include <unistd.h>
 
-int __attribute__((unused)) main(int argc, char **argv)
+int __attribute__((unused)) main(int argc, char** argv)
 {
     s_kslogs_file kslogs_file;
     kslogs_file_init(&kslogs_file,  "/home/kira/Desktop/Algorithm/kslogs/src/a.log");    // 按目录，将会将每天的日志保存到单独的文件

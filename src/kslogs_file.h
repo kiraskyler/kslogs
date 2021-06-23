@@ -22,16 +22,18 @@ typedef struct s_kslogs_file
 {
     s_kslogs    kslogs;
     int         fd;
-    char       *user_log_path;
-    char       *w_log_path;
-    pthread_t   thread;
+    char*       user_log_path;
+    char*       w_log_path;
     bool        is_loop;
+
+    pthread_t   thread;
+    pthread_mutex_t file_attr_mutex;
 } s_kslogs_file;
 
-extern void kslogs_file_init(s_kslogs_file *kslogs_file, const char *file_name);
-extern void kslogs_file_status_reset(s_kslogs_file *kslogs_file, bool status);
-extern void kslogs_file_clean(s_kslogs_file *kslogs_file);
-extern void kslogs_file_start(s_kslogs_file *kslogs_file);
-extern void kslogs_file_main_send(s_kslogs_file *kslogs_file, char *mess, unsigned long int mess_len);
+extern void kslogs_file_init(s_kslogs_file* kslogs_file, const char* file_name);
+extern void kslogs_file_status_reset(s_kslogs_file* kslogs_file, bool status);
+extern void kslogs_file_clean(s_kslogs_file* kslogs_file);
+extern void kslogs_file_start(s_kslogs_file* kslogs_file);
+extern void kslogs_file_main_send(s_kslogs_file* kslogs_file, char* mess, unsigned long int mess_len);
 
 #endif

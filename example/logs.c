@@ -2,7 +2,7 @@
 
 #include <unistd.h>
 
-int main(int argv, char **argc)
+int main(int argv, char** argc)
 {
     char  path[] = "./";            // 使用目录
     //  char path[] = "./mylog.log";    // 使用文件
